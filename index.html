@@ -1600,7 +1600,8 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
                             <h1 class="text-base md:text-lg font-bold text-slate-800 leading-tight hidden sm:block">小说大纲编辑器</h1>
                             <div id="currentChapterLabel" class="text-[11px] text-slate-400 truncate max-w-[260px]" title="第一卷 / 第一章">第一卷 / 第一章</div>
                         </div>
-                        <span id="autoSaveStatus" class="text-[10px] text-rose-600 bg-rose-50 px-2 py-0.5 rounded-full border border-rose-200 ml-2 whitespace-nowrap">自动保存已关闭</span>
+                        <span id="autoSaveStatus" class="text-[10px] text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-200 ml-2 whitespace-nowrap" style="min-width:96px;">自动保存已开启</span>
+                        <span id="storageBadge" class="text-[10px] px-2 py-0.5 rounded-full border whitespace-nowrap ml-2 text-slate-500 bg-slate-50 border-slate-200" style="min-width:120px;">存储 736 B / 5.00 MB</span>
                     </div>
 
                     <div class="flex items-center bg-slate-100 rounded-lg p-1 border border-slate-200 space-x-1.5 flex-wrap">
@@ -1781,10 +1782,10 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
                 </div>
             </div>
 
-            <!-- Toast 提示 -->
-            <div id="toast" class="fixed bottom-5 right-5 bg-slate-900 text-white text-xs md:text-sm px-4 py-3 rounded-xl shadow-xl transition-opacity duration-300 z-50 flex items-center gap-2 no-print opacity-0 pointer-events-none">
+            <!-- Toast 提示（iPad 安全区适配：避开底部 Home Indicator 和右侧圆角） -->
+            <div id="toast" class="fixed bg-slate-900 text-white text-xs md:text-sm px-4 py-3 rounded-xl shadow-xl transition-opacity duration-300 flex items-center gap-2 no-print" style="z-index:70;bottom: calc(1.25rem + env(safe-area-inset-bottom, 0px)); right: calc(1.25rem + env(safe-area-inset-right, 0px));">
                 <i class="fa-solid fa-circle-check text-emerald-400"></i>
-                <span id="toastMsg">已成功更新</span>
+                <span id="toastMsg">大纲 HTML 导出成功</span>
             </div>
         </div>
 <aside id="clueDrawer" class="no-print" aria-label="伏笔与笔记面板">
@@ -1823,7 +1824,7 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
                 <div id="noteCardList" class="clue-card-list"><div class="clue-empty">还没有笔记。<br>在正文中选中一段文字，然后点上方「新建笔记」。</div></div>
             </div>
         </aside>
-<script>window.__STANDALONE_EDITOR__ = true; window.__STANDALONE_PAYLOAD__ = {"title":"🌾 《灾荒年：搞钱大女主与病弱心机男》全景小说大纲","data":[{"id":"sec-1","title":"\n                            \n                            \n                            \n                            \n                            一、 作品定位与核心标签\n                        \n                        \n                        \n                        \n                        ","bgColor":"bg-yellow-light","textColor":"text-slate-800","tags":["架空古言","荒年发家致富","系统流","群像成长","双强双CP"],"content":[]},{"id":"sec-2","title":"\n                            \n                            \n                            \n                            \n                            二、 主角团设定与能力","bgColor":"bg-yellow-light","textColor":"text-slate-800","tags":["新标签","新标签"],"content":[{"type":"cards","cards":[{"title":"🌸 女一：苏杳（穿越）","details":[{"label":"定位","value":"清醒搞钱大女主、现代商业脑洞操盘手。"},{"label":"反差","value":"原主泼辣蛮横 ➔ 穿越后独立鲜活、聪明有界限。"},{"label":"核心能力","value":"现代商业思维，绑定【发家致富系统】。"}]},{"title":"🦊 男一：宋玉（本土）","details":[{"label":"定位","value":"病弱腹黑长兄、毒舌绿茶学霸、幕后谋略黑莲花。"},{"label":"反差","value":"对外清冷刻薄 ➔ 对苏杳温润纵容、暗地醋精。"},{"label":"核心能力","value":"算无遗策、洞察人心、科举入仕，是苏杳的硬核保护伞。"}]},{"title":"新卡片","details":[{"label":"定位","value":"..."},{"label":"属性","value":"描述..."},{"label":"属性","value":"描述..."}]},{"title":"新卡片","details":[{"label":"定位","value":"..."}]}],"boxBg":"bg-novel-brown-yellow"},{"type":"subheading","text":"\n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            📍 细纲内子标题\n                        \n                        \n                        \n                        \n                        \n                        \n                        \n                        \n                        \n                        \n                        \n                        "},{"type":"callout","boxBg":"bg-yellow-deep","title":"\u003cbr>","text":"剧情细节说明..."},{"type":"callout","boxBg":"bg-yellow-light","title":"细纲提示","text":"剧情细节说明..."}]}],"chapterId":"ch-mvw3stxz-yauja","bookId":"book-mvyuoh4a-nch1m","clues":[],"notes":[],"noteCategories":[],"exportTimestamp":1793699987120};</script>
+<script>window.__STANDALONE_EDITOR__ = true; window.__STANDALONE_PAYLOAD__ = {"title":"🌾 《灾荒年：搞钱大女主与病弱心机男》全景小说大纲","data":[{"id":"sec-1","title":"\n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            一、 作品定位与核心","bgColor":"bg-yellow-light","textColor":"text-slate-800","tags":["架空古言","荒年发家致富","系统流","群像成长","双强双CP"],"content":[]},{"id":"sec-2","title":"\n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            \n                            二、 主角团设定与能力","bgColor":"bg-yellow-light","textColor":"text-slate-800","tags":["新标签"],"content":[{"type":"cards","cards":[{"title":"🌸 女一：苏杳（穿越）","details":[{"label":"定位","value":"清醒搞钱大女主、现代商业脑洞操盘手。"},{"label":"反差","value":"原主泼辣蛮横 ➔ 穿越后独立鲜活、聪明有界限。"},{"label":"核心能力","value":"现代商业思维，绑定【发家致富系统】。"},{"label":"属性","value":"\u003cbr>"}]},{"title":"🦊 男一：宋玉（本土）","details":[{"label":"定位","value":"病弱腹黑长兄、毒舌绿茶学霸、幕后谋略黑莲花。"},{"label":"反差","value":"对外清冷刻薄 ➔ 对苏杳温润纵容、暗地醋精。"},{"label":"核心能力","value":"算无遗策、洞察人心、科举入仕，是苏杳的硬核保护伞。"}]}],"boxBg":"bg-novel-brown-yellow"}]}],"chapterId":"ch-mvw3stxz-yauja","bookId":"book-mvyuoh4a-nch1m","clues":[],"notes":[],"noteCategories":[],"exportTimestamp":1793707969144};</script>
 <script id="x-editor-js">const defaultOutlineData = [
             {
                 id: "sec-1",
@@ -1920,6 +1921,8 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
         let eyedropperMode = null;
         let autoSaveTimer = null;
         let autoSaveLoopTimer = null;
+        let historyRecordTimer = null; // 防抖：非 IME 输入后延迟入栈
+        let isComposing = false; // 标记中文/日文输入法是否正在选词中（compositionstart → compositionend 之间不入栈）
 
         /* ---------------- 用户设置：自动保存 + 快捷键 ----------------
            存本机 localStorage：桌面端与导出的独立 HTML 页各自记忆自己的设置 */
@@ -2010,6 +2013,7 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
 
         initUserSettings();
 
+        // 立即入栈（用于确定性的大操作：加/删/导入等）
         function recordHistory() {
             const currentState = JSON.stringify(outlineData);
             if (historyStack.length === 0 || historyStack[historyStack.length - 1] !== currentState) {
@@ -2036,6 +2040,53 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
             setupShortcuts();
 
             applyAutoSaveTimer();
+            updateStorageBadge(); // 页面打开时立即显示当前存储用量
+
+            // 全局输入监听：区分 IME 组合输入（中文/日文选词）和普通输入
+            // "一次输入法输出 = 一步撤销"：
+            //   - IME compositionstart → compositionend：选词期间不入栈，compositionend 时才入栈
+            //     （比如拼音"nihao"选"你好"，一次输出 = 一步撤销）
+            //   - 非 IME 的普通 input（英文/直接打字）：180ms 停顿算一次输入结束
+            //
+            // 关键：input 事件触发时，contenteditable 的 DOM 已变但 outlineData 还没同步
+            // （同步靠 onblur 回调），所以入栈前必须先手动触发同步，否则 historyStack 存的是旧数据
+            document.addEventListener('compositionstart', (e) => {
+                if (e.target && e.target.isContentEditable) {
+                    isComposing = true;
+                    clearTimeout(historyRecordTimer);
+                }
+            });
+            document.addEventListener('compositionend', (e) => {
+                if (e.target && e.target.isContentEditable) {
+                    isComposing = false;
+                    // IME 选词结束 = 一次完整输入，先同步 DOM→outlineData 再立即入栈
+                    syncContentEditableToOutline(e.target);
+                    recordHistory();
+                }
+            });
+            document.addEventListener('input', (e) => {
+                const t = e.target;
+                if (!t || !t.isContentEditable) return;
+                if (isComposing) return; // IME 选词中的 input 事件忽略，等 compositionend
+                // 先同步 DOM→outlineData，再防抖入栈
+                syncContentEditableToOutline(t);
+                clearTimeout(historyRecordTimer);
+                historyRecordTimer = setTimeout(recordHistory, 180);
+            }, true);
+
+            // 把 contenteditable 元素的当前值同步回 outlineData
+            // 利用 HTML onblur 属性的同步逻辑——手动触发一次但不真的 blur（保留焦点）
+            // 同时也触发 scheduleAutoSave（onblur 里原本也有这个调用）
+            function syncContentEditableToOutline(el) {
+                try {
+                    // 如果元素有 onblur 属性，解析执行其中的同步代码
+                    if (typeof el.onblur === 'function') {
+                        el.onblur.call(el, { target: el });
+                    }
+                } catch (err) {}
+                // 兜底：也触发 scheduleAutoSave（某些 onblur 里没调，但大部分有）
+                if (typeof scheduleAutoSave === 'function') scheduleAutoSave();
+            }
 
             document.addEventListener('click', (e) => {
                 if (eyedropperMode) return;
@@ -2203,6 +2254,7 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
             const title = mainTitleEl ? mainTitleEl.innerText : '';
             if (typeof window.persistActiveChapter === 'function') {
                 window.persistActiveChapter(outlineData, title);
+                updateStorageBadge();
             } else {
                 // 历史版本只读预览页：绝不写入缓存
                 if ((window.__STANDALONE_PAYLOAD__ || {}).historyView) return;
@@ -2211,11 +2263,65 @@ body.clue-drawer-open #exportContent { padding-right: 344px; }
                     if (mainTitleEl) localStorage.setItem(keys.title, title);
                     localStorage.setItem(keys.data, JSON.stringify(outlineData));
                     localStorage.setItem(keys.ts, String(Date.now()));
-                } catch (err) {}
+                    updateStorageBadge();
+                } catch (err) {
+                    // 5 MB 超限：标记显示"已满"
+                    updateStorageBadge(true);
+                }
             }
         }
 
+        // localStorage 用量估算：遍历所有 key 的 value 长度之和（UTF-16，2 字节/字符）
+        // 总配额 5 MB = 5 * 1024 * 1024 字节，但各浏览器实际约 4.7 MB 可用
+        const STORAGE_TOTAL = 5 * 1024 * 1024;
+        function getStorageUsage() {
+            let bytes = 0;
+            try {
+                for (let i = 0; i < localStorage.length; i++) {
+                    const key = localStorage.key(i);
+                    if (!key) continue;
+                    const val = localStorage.getItem(key) || '';
+                    // JavaScript 字符串是 UTF-16，每个字符 2 字节
+                    bytes += (key.length + val.length) * 2;
+                }
+            } catch (err) {}
+            return bytes;
+        }
+
+        function formatBytes(b) {
+            if (b < 1024) return b + ' B';
+            if (b < 1024 * 1024) return (b / 1024).toFixed(1) + ' KB';
+            return (b / (1024 * 1024)).toFixed(2) + ' MB';
+        }
+
+        function updateStorageBadge(quotaExceeded) {
+            const badge = document.getElementById('storageBadge');
+            if (!badge) return;
+            const used = getStorageUsage();
+            const pct = Math.min(100, Math.round((used / STORAGE_TOTAL) * 100));
+            let color, text;
+            if (quotaExceeded || pct >= 95) {
+                color = 'text-rose-600 bg-rose-50 border-rose-200';
+                text = '存储 ' + formatBytes(used) + ' / ' + formatBytes(STORAGE_TOTAL) + '（已满！）';
+            } else if (pct >= 80) {
+                color = 'text-amber-600 bg-amber-50 border-amber-200';
+                text = '存储 ' + formatBytes(used) + ' / ' + formatBytes(STORAGE_TOTAL) + '（' + pct + '%）';
+            } else {
+                color = 'text-slate-500 bg-slate-50 border-slate-200';
+                text = '存储 ' + formatBytes(used) + ' / ' + formatBytes(STORAGE_TOTAL);
+            }
+            badge.className = 'text-[10px] px-2 py-0.5 rounded-full border whitespace-nowrap ml-2 ' + color;
+            badge.innerText = text;
+        }
+
         function saveData(silent = true, force = false) {
+            // 保存前强制让当前焦点失焦——contenteditable 里 onblur 会把 DOM 变化写回 outlineData，
+            // 否则用户刚打了几个字、还没失焦就点保存，存的是 outlineData 里的旧值
+            if (document.activeElement && document.activeElement !== document.body) {
+                document.activeElement.blur();
+            }
+            // 保存只是把当前内存状态刷到磁盘，不影响撤销栈（WPS/VS Code 行为）
+            // 保存前先入栈，确保保存动作与之后的撤销/重做协调
             recordHistory();
             persistOutlineSnapshot(force);
             if (!silent) showToast("💾 大纲数据已成功保存！");
@@ -4611,7 +4717,7 @@ if ('serviceWorker' in navigator && location.protocol !== 'file:') {
         if (document.getElementById('standaloneCacheBar')) return;
         const bar = document.createElement('div');
         bar.id = 'standaloneCacheBar';
-        bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding:8px 14px;background:rgba(248,250,252,.96);border-top:1px solid #e2e8f0;backdrop-filter:blur(6px);font-family:inherit;font-size:12px;color:#64748b;';
+        bar.style.cssText = 'position:fixed;left:0;right:0;bottom:0;padding-bottom:calc(8px + env(safe-area-inset-bottom, 0px));z-index:60;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;padding-top:8px;padding-left:14px;padding-right:14px;background:rgba(248,250,252,.96);border-top:1px solid #e2e8f0;backdrop-filter:blur(6px);font-family:inherit;font-size:12px;color:#64748b;';
         bar.innerHTML = '<span id="cacheBarInfo"></span>' +
             '<button id="cacheBarCleanBtn" type="button" style="font-size:12px;font-weight:600;padding:5px 12px;border-radius:8px;border:1px solid #e2e8f0;background:#fff;color:#475569;cursor:pointer;font-family:inherit;display:flex;align-items:center;gap:6px;">' +
             '<i class="fa-solid fa-broom"></i><span>清理其他版本</span></button>';
